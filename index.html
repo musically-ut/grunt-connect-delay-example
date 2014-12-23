@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test grunt-connect-delay</title>
+  <style>
+
+  /* Regular */
+  /* Font from: https://www.theleagueofmoveabletype.com/league-gothic */
+  /* The loading of fonts is delayed by 10 seconds */
+  @font-face {
+      font-family: 'League Gothic';
+      src: url('delay/10000/fonts/leaguegothic-regular-webfont.eot');
+      src: url('delay/10000/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('delay/10000/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+           url('delay/10000/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+           url('delay/10000/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+
+    .center {
+      display         : flex;
+      align-items     : conter;
+      justify-content : center;
+    }
+
+    .message {
+      font-size: 72px;
+      margin: 25vw;
+    }
+
+    .with-font {
+      font-family: 'League Gothic';
+      color: #2a2e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <p class="message">What happens <span class="with-font">if your font takes 10 seconds to load?</span>
+    </p>
+  </div>
+</body>
+</html>
